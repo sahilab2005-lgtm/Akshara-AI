@@ -1,22 +1,84 @@
-# Python
-.venv/
 __pycache__/
-*.pyc
+*.py[cod]
+*$py.class
+
+# Virtual environments
+.venv/
+venv/
+env/
+ENV/
+
+
+# Environment
+
+.env
+.env.*
+!.env.example
+
+
+sarvam_local/
+
 
 # Database
+
+
 *.db
+*.sqlite
+*.sqlite3
 
-# Uploads
+
+# Uploads / User Data
+
+
 uploads/
+static/uploads/
 
-# Local tools
-poppler-26.02.0/
 
-# Downloads
-Downloads/
+# Models / AI files
+
+
+*.bin
+*.pt
+*.pth
+*.onnx
+*.safetensors
+
+
+# Logs
+
+*.log
+
 
 # IDE
-.vscode/
 
-# Models
-sarvam_local/
+
+.vscode/
+.idea/
+
+
+# OS
+
+
+.DS_Store
+Thumbs.db
+
+
+# Build
+
+build/
+dist/
+*.egg-info/
+
+
+# Large tools
+
+poppler-*/
+tesseract-*/
+
+
+
+*.tmp
+*.temp
+*.bak
+
+.ipynb_checkpoints/
