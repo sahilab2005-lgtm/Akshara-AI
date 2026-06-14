@@ -22,3 +22,4 @@ A multilingual AI assistant built using FastAPI, Sarvam LLM and Tesseract OCR.
 - HTML
 - CSS
 - JavaScript
+
