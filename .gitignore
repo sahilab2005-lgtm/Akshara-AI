@@ -1,4 +1,6 @@
-__pycache__/
+# Python
+
+ycache__/
 *.py[cod]
 *$py.class
 
@@ -9,39 +11,61 @@ env/
 ENV/
 
 
-# Environment
+# Environment / Secrets
 
 .env
 .env.*
-!.env.example
+*.key
+*.pem
 
 
-sarvam_local/
+# Jupyter
+
+.ipynb_checkpoints/
+
+
+# VS Code
+
+.vscode/
+*.code-workspace
 
 
 # Database
-
 
 *.db
 *.sqlite
 *.sqlite3
 
 
-# Uploads / User Data
-
+# Uploads / User files
 
 uploads/
+media/
 static/uploads/
 
 
-# Models / AI files
-
-
+# AI Models
+models/
+model/
+sarvam_local/
+*.safetensors
 *.bin
 *.pt
 *.pth
 *.onnx
-*.safetensors
+
+# HuggingFace cache
+.cache/
+huggingface/
+.cache/huggingface/
+
+
+# Large downloads
+
+Downloads/
+*.zip
+*.exe
+*.msi
 
 
 # Logs
@@ -49,36 +73,21 @@ static/uploads/
 *.log
 
 
-# IDE
-
-
-.vscode/
-.idea/
-
-
-# OS
-
+# OS files
 
 .DS_Store
 Thumbs.db
+desktop.ini
 
 
-# Build
-
-build/
-dist/
-*.egg-info/
-
-
-# Large tools
-
-poppler-*/
-tesseract-*/
-
-
+# Temporary files
 
 *.tmp
 *.temp
 *.bak
 
-.ipynb_checkpoints/
+
+# Poppler / OCR tools
+
+poppler*/
+tesseract*/
