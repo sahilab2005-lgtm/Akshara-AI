@@ -1,0 +1,22 @@
+# Python
+.venv/
+__pycache__/
+*.pyc
+
+# Database
+*.db
+
+# Uploads
+uploads/
+
+# Local tools
+poppler-26.02.0/
+
+# Downloads
+Downloads/
+
+# IDE
+.vscode/
+
+# Models
+sarvam_local/

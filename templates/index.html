@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Akshara AI - Powered by Sarvam</title>
+
+  <link rel="stylesheet" href="/static/style.css">
+</head>
+
+<body>
+
+<div class="chat-shell">
+
+  <!-- HEADER -->
+  <div class="chat-header">
+    <div class="title">
+      ⚡ Akshara AI
+      <span class="status">● Powered by Sarvam</span>
+    </div>
+
+    <div class="header-actions">
+      <button onclick="location.reload()" title="Refresh">⟳</button>
+    <button onclick="clearChat()" title="Clear Chat">🗑</button>
+    </div>
+  </div>
+
+  <!-- CHAT AREA -->
+  <div class="messages" id="msgArea"></div>
+
+  <!-- TOOLBAR -->
+  <div class="toolbar">
+    <button onclick="generateText()">Generate</button>
+    <button onclick="summarizeText()">Summarize</button>
+
+    <!-- TRANSLATE DROPDOWN -->
+    <div class="dropdown">
+      <button class="dropbtn">Translate ▼</button>
+      <div class="dropdown-content scrollable">
+        <button onclick="translateTo('English')">English</button>
+        <button onclick="translateTo('Hindi')">Hindi</button>
+        <button onclick="translateTo('Marathi')">Marathi</button>
+        <button onclick="translateTo('French')">French</button>
+      </div>
+    </div>
+        
+    <button onclick="extractText()">Extract</button>
+  </div>
+
+  <!-- INPUT AREA -->
+  <div class="input-area">
+    <textarea id="inputText" placeholder="Type your message..." rows="1"></textarea>
+
+    <input type="file" id="fileInput" hidden accept="image/*,application/pdf" />
+    <button onclick="document.getElementById('fileInput').click()" title="Upload File">+</button>
+
+    <button class="send-btn" onclick="generateText()" title="Send">➤</button>
+    
+    
+  </div>
+
+</div>
+
+<script src="/static/script.js"></script>
+
+</body>
+</html>
